@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: ${PORT:4449}   # HTTP port
+  port: ${PORT:4445}   # HTTP port
 
 # Discovery Server Access
 eureka:
