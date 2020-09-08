@@ -1,0 +1,18 @@
+# HTTP Server
+server:
+  port: ${PORT:4442}   # HTTP port
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
+    es.indra: 'DEBUG'
+    
